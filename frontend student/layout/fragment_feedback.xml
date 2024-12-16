@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Rating Guide Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating Guide"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A. Excellent (100%) - 5 Stars\nB. Good (80%) - 4 Stars\nC. Satisfactory (60%) - 3 Stars\nD. Below Satisfactory (40%) - 2 Stars\nE. Poor (20%) - 1 Star"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="8dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Rating Items -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Timeliness of the service"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <RatingBar
+                    android:id="@+id/ratingTimeliness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Neatness of the surroundings"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingNeatness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.1 Status of boiled Rice/Banana/Boiled Egg"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingFoodStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.2 Taste of Curries/Fried"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingTaste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.3 Snacks, Tea, Coffee and Breakfast"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingSnacks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Quantity of food as per menu"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Courtesy of services from Contractor employees"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingCourtesy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. Wearing of uniforms by catering staff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingUniforms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. Cooking as per Menu"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingCooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. Cleanliness of wash basins and wash area"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingWashArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"
+                    android:layout_marginVertical="8dp"
+                    style="@android:style/Widget.Material.RatingBar"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:backgroundTint="#D3D3D3"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Suggestions Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/suggestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="9. Any Suggestions &amp; comments"
+                        android:minLines="3"
+                        android:gravity="top"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Feedback"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView> 

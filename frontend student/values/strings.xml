@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mess Feedback</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mess Feedback</string>
+    <string name="nav_header_subtitle">IIT Mess Management</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation Menu Items -->
+    <string name="menu_home">Home</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_complaints">Complaints</string>
+    <string name="menu_announcements">Announcements</string>
+    <string name="menu_complaint_status">Complaint Status</string>
+    <string name="menu_contact">Contact Info</string>
+    <string name="menu_representative">Mess Representative</string>
+
+    <!-- Menu Fragment -->
+    <string name="breakfast_title">Breakfast</string>
+    <string name="lunch_title">Lunch</string>
+    <string name="snacks_title">Snacks</string>
+    <string name="dinner_title">Dinner</string>
+
+    <!-- Feedback Fragment -->
+    <string name="feedback_title">Share Your Feedback</string>
+    <string name="feedback_meal_prompt">Select Meal</string>
+    <string name="feedback_rating_prompt">Rate Your Experience</string>
+    <string name="feedback_comment_hint">Additional Comments (Optional)</string>
+    <string name="feedback_submit">Submit Feedback</string>
+
+    <!-- Complaints Fragment -->
+    <string name="complaint_title">Register Complaint</string>
+    <string name="complaint_type_prompt">Type of Complaint</string>
+    <string name="complaint_description_hint">Describe your complaint</string>
+    <string name="complaint_submit">Submit Complaint</string>
+
+    <!-- Announcements Fragment -->
+    <string name="announcements_title">Mess Announcements</string>
+    <string name="no_announcements">No announcements at this time</string>
+
+    <!-- Contact Info -->
+    <string name="email_button">Email</string>
+    <string name="call_button">Call</string>
+
+    <string name="title_activity_representative">Mess Representative Dashboard</string>
+</resources>
